@@ -5,4 +5,4 @@
 
 
 
-Desafio criado por <a href="https://github.com/thaysagomes">Thaysa Gomes</a> :)
+Desafio criado por <a href="https://github.com/thaysagomes">Thaysa Gomes</a> e codificado por JulioCesarJ
