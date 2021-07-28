@@ -1,140 +1,121 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ===== CSS ==== -->
     <link rel="stylesheet" href="style.css">
-    <style>
-         @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
-    </style>
-    <title>Document</title>
+
+    <!-- ====== GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+
+    <title>Selfcare</title>
 </head>
 <body>
-    <header>
-        <div id="fundo-cabecalho">
-            <nav>
-                <div><span id="logo-self"> &#9733<strong>Selfcare</strong></span>
-                </div>
-                <div class="icones-direito">
-                    <ul>
-                        <li><a href="#"><img src="assets/busca.png" alt=""></a></li>
-                        <li><a href="#"><img src="assets/perfil.png" alt=""></a></li>
-                        <li><a href="#"><img src="assets/carrinho.png" alt=""></a></li>
-                    </ul>
-                </div>
-            </nav>
+    <!-- ======== HEADER =========== -->
+    <header id="header">
+        <div class="logo">
+            <img src="assets/logo.png" alt="">
         </div>
-        <div id="banner" >
+        <nav class="navbar">
+            <ul>
+                <li><img src="assets/busca.png" alt=""></li>
+                <li><img src="assets/perfil.png" alt=""></li>
+                <li><img src="assets/carrinho.png" alt=""></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- ======== SECTION-1 =========== -->
+    <section id="Section-1">
+        <div class="banner">
             <img src="assets/banner.png" alt="">
         </div>
-        <div class="container-promocao">
-            <span id="promocao">PROMOÇÃO</span>
-            <span id="produtos">9 Produtos</span>
-            
+    </section>
+    <!-- ======== SECTION-2 =========== -->
+    <section id="section-2">
+        <div class="title">
+            <h2>PROMOÇÃO</h2>
+            <h3>9 produtos</h3>
         </div>
-        <hr class="clear">
-    </header>
-    <main class="conteudo">
-        <div class="container1-produtos">
-            <!-- Divisão para imagens -->
-            <div class="img-1" >
-                <img src="assets/img-1.png" alt=""></img>
-                <div class="descri-produto-1">Lorem ipsum dolor sit</div>
-                <div class="valor-produto-1">R$ 50,00</div>
+        <div class="produtos">
+            <div class="container-produtos">
+                <img src="assets/img-1.png" alt="">
+                <h3>Maui Moisture</h3>
+                <h3>R$ <span>650,00</span></h3>
             </div>
-            
-            <div class="img-2" >
-                <img src="assets/img-2.png" alt=""></img>
-                <div class="descri-produto-1">Lorem ipsum dolor sit</div>
-                <div class="valor-produto-1">R$ 50,00</div>
+            <div class="container-produtos">
+                <img src="assets/img-2.png" alt="">
+                <h3>Vitality ahot</h3>
+                <h3>R$ <span>850,00</span></h3>
             </div>
-            <div class="img-3" >
-                <img src="assets/img-3.png" alt=""></img>
-                <div class="descri-produto-1">Lorem ipsum dolor sit</div>
-                <div class="valor-produto-1">R$ 50,00</div>
+            <div class="container-produtos">
+                <img src="assets/img-3.png" alt="">
+                <h3>Maui Moisture</h3>
+                <h3>R$ <span>950,00</span></h3>
             </div>
-            <!-- Fim imagens -->
+            <div class="container-produtos">
+                <img src="assets/img-4.png" alt="">
+                <h3>Vitality ahot</h3>
+                <h3>R$ <span>750,00</span></h3>
+            </div>
+            <div class="container-produtos">
+                <img src="assets/img-5.png" alt="">
+                <h3>Maui Moisture</h3>
+                <h3>R$ <span>650,00</span></h3>
+            </div>
+            <div class="container-produtos">
+                <img src="assets/img-6.png" alt="">
+                <h3>Vitality ahot</h3>
+                <h3>R$ <span>120,00</span></h3>
+            </div>
+            <div class="container-produtos">
+                <img src="assets/img-7.png" alt="">
+                <h3>Maui Moisture</h3>
+                <h3>R$ <span>689,00</span></h3>
+            </div>
+            <div class="container-produtos">
+                <img src="assets/img-8.png" alt="">
+                <h3>Vitality ahot</h3>
+                <h3>R$ <span>135,00</span></h3>
+            </div>
+            <div class="container-produtos">
+                <img src="assets/img-9.png" alt="">
+                <h3>Vitality ahot</h3>
+                <h3>R$ <span>50,00</span></h3>
+            </div>
         </div>
-        <div class="clear"></div>
-        <div class="container-produtos-2">
-            <div class="produtos-2" >
-                <!-- Divisão para imagens -->
-                <div class="img-1" >
-                    <img src="assets/img-4.png" alt=""></img>
-                    <div class="descri-produto-1">Lorem ipsum dolor sit</div>
-                    <div class="valor-produto-1">R$ 50,00</div>
-                </div>
-                <div class="img-2" >
-                    <img src="assets/img-5.png" alt=""></img>
-                    <div class="descri-produto-1">Lorem ipsum dolor sit</div>
-                    <div class="valor-produto-1">R$ 50,00</div>
-                </div>
-                <div class="img-3" >
-                    <img src="assets/img-6.png" alt=""></img>
-                    <div class="descri-produto-1">Lorem ipsum dolor sit</div>
-                    <div class="valor-produto-1">R$ 50,00</div>
-                </div>
-            <!-- Fim imagens -->
-            </div>
-        </div>
-        <div class="fundo-produtos-3">
-            <div class="produtos-3" >
-                <!-- Divisão para imagens -->
-                <div class="img-1" >
-                    <img src="assets/img-7.png" alt=""></img>
-                    <div class="descri-produto-1">Lorem ipsum dolor sit</div>
-                    <div class="valor-produto-1">R$ 50,00</div>
-                </div>
-                <div class="img-2" >
-                    <img src="assets/img-8.png" alt=""></img>
-                    <div class="descri-produto-1">Lorem ipsum dolor sit</div>
-                    <div class="valor-produto-1">R$ 50,00</div>
-                </div>
-                <div class="img-3" >
-                    <img src="assets/img-9.png" alt=""></img>
-                    <div class="descri-produto-1">Lorem ipsum dolor sit</div>
-                    <div class="valor-produto-1">R$ 50,00</div>
-                </div>
-            <!-- Fim imagens -->
-            </div>
-        </div>    
-    </main>
-    <div class="rodape">
-        <div class="conteudo-contato">
-            <div class="contato">
-                <ul>
-                    <li>Contato</li>
-                    <li>Termo de serviço</li>
-                    <li>Politica de privacidade</li>
-                    <li>Cancelamento, troca e reembolso</li>
-                </ul>
-            </div>
+    </section>
+    <footer id="footer">
+        <div class="conteudo-footer">
+            <ul class="list-footer">
+                <li>Contato</li>
+                <li>Termos de serviço</li>
+                <li>Politica de privacidade</li>
+                <li>Cancelamento, troca e reembolso</li>
+            </ul>
             <div class="newsletter">
-                <p>Newsletter</p>
-                <input class="e-mail" type="text">
-                <input class="inscrever" type="button" value="Inscrever">
+                <h2>Newsletter</h2>
+                <div class="new-desktop">
+                    <input type="text" placeholder="Digite seu melhor e-mail">
+                    <button>Inscrever</button>
+                </div>
             </div>
-            <div class="clear"></div>
         </div>
-        <hr class="clear">
-        <div class="inferior">
-            <div class="redes-sociais">
-                <ul>
-                    <li><a href=""><img src="assets/instagram.png" alt=""></a></li>
-                    <li><a href=""><img src="assets/Facebook (1).png" alt=""></a></li>
-                </ul>
-            </div>
-            <div class="clear"></div>
-            <div class="form-pagamento">
-                <ul>
-                    <li><a href="#"><img src="assets/mastercard.png" alt=""></a></li>
-                    <li><a href="#"><img src="assets/paypal.png" alt=""></a></li>
-                    <li><a href="#"><img src="assets/visa.png" alt=""></a></li>
-                </ul>
-            </div>
-            <div class="clear"></div>
+        <div class="sociais-pag">
+            <ul class="redes-sociais">
+                <li><img src="assets/instagram.png" alt=""></li>
+                <li><img src="assets/Facebook (1).png" alt=""></li>
+            </ul>
+            <ul class="pagamentos">
+                <li><img src="assets/mastercard.png" alt=""></li>
+                <li><img src="assets/paypal.png" alt=""></li>
+                <li><img src="assets/visa.png" alt=""></li>
+            </ul>
         </div>
-    </div>    
+    </footer>
 </body>
 </html>

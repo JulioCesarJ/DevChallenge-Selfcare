@@ -1,322 +1,307 @@
-/* Limpar Formatos */
 * {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
 }
 
-body {
-  width: 100%;
-  height: 100%;
+:root{
+    /* FONT-SIZE MOBILE*/
+    --titles-12: 0.8rem;
+    --titles-14: 1rem;
+
+    /* FONT-SIZE DESKTOP*/
+    --titles-16: 1rem;
+    --titles-18: 1.2rem;
+
+    /* CORES */
+    --Verde: #5CA720;
+    --Preto: #161616;
+    --Cinza-linhas-divisórias: #a5a1a16e;
+    --Cinza-background-footer: #F9F9F9;
 }
 
-/* Area Navbar */
-
-.icones-direito {
-  position: absolute;
-  width: auto;
-  height: 23.78px;
-  top: 36px;
-  right: 70.91px;
-  /* border: 2px solid blue; */
+h2 {
+    font-size: var(--titles-14);
+    font-weight: 700;
 }
 
-.icones-direito ul li {
-  float: left;
-  margin-right: 42px;
-  text-decoration: none;
-  list-style: none;
-  /* border: 2px solid red; */
+h3{
+    font-size: var(--titles-12);
+    font-weight: 400;
 }
 
-#logo-self {
-  width: auto;
-  position: absolute;
-  top: 32px;
-  left: 69px;
-
-  font-family: "Cabin";
-  font-size: 25px;
-  color: #161616;
-  /* border: 2px solid red; */
+span {
+    color: var(--Verde);
 }
 
-#fundo-cabecalho {
-  width: auto;
-  height: 94px;
-  /* border: 2px solid red; */
+/* ====== LAYOUT MOBILE ======= */
+
+/* ===== HEADER ====== */
+
+#header{
+    display: flex;
+    padding: 2rem;
+    justify-content: space-between;
 }
 
-/* Banner */
-#banner {
-  width: auto;
-  height: 375px;
-  /* border: 2px solid red; */
+/* LOGO */
+
+.logo{
+    width: 5rem;
 }
 
-#banner img {
-  width: 100%;
-  height: 100%;
+.logo img{
+    width: 100%;
 }
 
-/* Promocao abaixo do banner */
+/* NAVBAR */
 
-.container-promocao {
-  /* border: 2px solid red; */
-  padding-bottom: 85px;
+.navbar ul{
+    display: flex;
+    column-gap: 1.562rem;
 }
 
-#promocao {
-  position: relative;
-  top: 42.5px;
-  left: 69px;
-  font-family: "Lato";
-  font-size: 20px;
-  font-style: normal;
-  font-weight: bold;
-  /* border: 2px solid red; */
-  float: left;
+.navbar li {
+    display: block;
+    width: 1rem;
 }
 
-#produtos {
-  position: relative;
-  font: bold;
-  top: 42.5px;
-  right: 71px;
-  /* border: 2px solid red; */
-  float: right;
+.navbar img {
+    width: 100%;
 }
 
-.linha-promo {
-  position: absolute;
-  right: 0px;
-  top: 150px;
+/* ====== SECTION-1 ====== */
+
+.banner{
+    width: 100%;
 }
 
-/* Div Conteudo para produtos */
-.conteudo {
-  /* border: 2px solid blue; */
-  padding-top: 57px;
+.banner img {
+    width: 100%;
 }
 
-/* Produtos fileira 1*/
+/* ====== SECTION-2 ====== */
 
-.container1-produtos {
-  position: relative;
-  left: 100px;
-  width: 1299px;
-  height: 393px;
-  /* border: 2px solid red; */
-  float: left;
+.title{
+    display: flex;
+    height: 3.75rem;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--Cinza-linhas-divisórias);
+    padding: 0rem 2rem;
 }
 
-.img-1 {
-  position: absolute;
-  width: 303px;
-  height: 393px;
-  /* border: 2px solid red; */
+/* GRID PRODUTOS */
+
+.produtos {
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr );
+    border-bottom: 1px solid var(--Cinza-linhas-divisórias);
+    padding: 1rem 2rem 5rem;
+    column-gap: 4rem;
+    row-gap: 1.687rem;
 }
 
-.img-2 {
-  position: absolute;
-  width: 303px;
-  height: 393px;
-  /* border: 2px solid red; */
-  left: 498px;
+.container-produtos{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    row-gap: 0.3rem;
 }
 
-.img-3 {
-  position: relative;
-  width: 303px;
-  height: 393px;
-  /* border: 2px solid red; */
-  left: 996px;
+.container-produtos img{
+    width: 100%;
 }
 
-.descri-produto-1 {
-  position: absolute;
-  font-size: 22px;
-  font-family: "lato";
-  width: auto;
-  top: 326px;
-  /* border: 2px solid red; */
+/* ====== FOOTER ====== */
+
+#footer{
+    padding: 2rem 0;
+    background-color: var(--Cinza-background-footer);
 }
 
-.valor-produto-1 {
-  position: absolute;
-  font-size: 25px;
-  width: auto;
-  top: 363px;
-  /* border: 2px solid red; */
+/* List */
+.list-footer{
+    display: flex;
+    font-weight: 700;
+    flex-direction: column;
+    padding: 0 2rem;
+    row-gap: 1rem;
 }
 
-/* Produtos fileira 2*/
-
-.container-produtos-2 {
-  position: relative;
-  margin-top: 65px;
-  left: 100px;
-  width: 1299px;
-  height: 393px;
-  /* border: 2px solid blue; */
+.list-footer li {
+    display: block;
 }
 
-.produtos-2 {
-  position: absolute;
-  width: 303px;
-  height: 393px;
-  /* border: 2px solid red; */
+/* Newsletter */
+
+.newsletter{
+    display: flex;
+    flex-direction: column;
+    padding: 0 2rem 2rem;
+    margin-top: 3.375rem;
+    row-gap: 1rem;
+    border-bottom: 1px solid var(--Cinza-linhas-divisórias);
 }
 
-.descri-produto-2 {
-  position: absolute;
-  font-size: 22px;
-  font-family: "lato";
-  width: auto;
-  top: 326px;
-  /* border: 2px solid blue; */
+.new-desktop{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
 }
 
-.valor-produto-2 {
-  position: absolute;
-  font-size: 25px;
-  width: auto;
-  top: 363px;
-  /* border: 2px solid blue; */
+.newsletter input{
+    height: 2.687rem; 
+    border-radius: 0.2rem;
+    border: 1px solid var(--Cinza-linhas-divisórias);
+    font-weight: 700;
 }
 
-/* Produtos fileira 3*/
-
-.fundo-produtos-3 {
-  position: relative;
-  margin-top: 65px;
-  left: 100px;
-  width: 1299px;
-  height: 393px;
-  /* border: 2px solid black; */
+.newsletter input::placeholder{
+    padding-left: 1rem;
+    color: #A8A4A4;
 }
 
-.produtos-3 {
-  position: absolute;
-  width: 303px;
-  height: 393px;
-  /* border: 2px solid red; */
+.newsletter button{
+    height: 2.687rem;
+    border-radius: 0.2rem;
+    border: none;
+    font-weight: 700;
+    color: white;
+    background-color: var(--Verde);
 }
 
-.descri-produto-3 {
-  position: absolute;
-  font-size: 22px;
-  font-family: "lato";
-  width: auto;
-  top: 326px;
-  /* border: 2px solid black; */
+/* CONTAINER REDES SOCIAIS E FORMA DE PAGAMENTO */
+
+.sociais-pag{
+    display: flex;
+    padding: 0 2rem;
+    height: 23px;
+    margin-top: 1.687rem;
+    justify-content: space-between;
 }
 
-.valor-produto-3 {
-  position: absolute;
-  font-size: 25px;
-  width: auto;
-  top: 363px;
-  /* border: 2px solid black; */
+/* Redes sociais */
+
+.redes-sociais{
+    display: flex;
+    column-gap: 1rem;
 }
 
-.clear {
-  clear: both;
+.redes-sociais li{
+    display: block;
+    width: 100%;
+    height: 100%;
 }
 
-/* Rodapé */
-
-.rodape {
-  /* padding-top: 40px; */
-  height: 348px;
-  /* border: 2px solid black; */
+.redes-sociais li img{
+    width: 100%;
+    height: 100%;
 }
 
-/* Caixa Superior */
-.conteudo-contato {
-  margin-top: 40px;
-  height: 176px;
-  /* border: 2px solid red; */
+/* formas de pagamento */
+.pagamentos{
+    display: flex;
+    column-gap: 0.5rem;
 }
 
-.contato {
-  position: relative;
-  left: 40px;
-  width: auto;
-  /* border: 2px solid blue; */
-  float: left;
-  font-size: 20px;
-  font-weight: bold;
-  line-height: 30px;
+.pagamentos li {
+    display: block;
+    width: 100%;
+    height: 100%;
 }
 
-.contato ul li {
-  list-style: none;
+.pagamentos li img{
+    width: auto;
+    height: 100%;
 }
 
-.newsletter {
-  font: "Lato";
-  font-weight: bold;
-  margin-top: 15px;
-  font-size: 20px;
-  position: relative;
-  right: 70px;
-  /* border: 2px solid red; */
-  float: right;
+/* ====== LAYOUT DESKTOP ======= */
+
+@media (min-width: 768px) {
+
+    /* FONT SIZE PADRAO */
+    h2 {
+        font-size: var(--titles-16);
+        font-weight: 700;
+    }
+    
+    h3{
+        font-size: var(--titles-18);
+        font-weight: 400;
+    }
+
+    #footer li, button{
+        font-size: var(--titles-18);
+    }
+    /* HEADER */
+
+    .logo{
+        width: 8rem;
+    }
+
+    .navbar li {
+        width: 1.5rem;
+    }
+
+    /*  SECTION-2  */
+
+    .produtos {
+        display: grid;
+        grid-template-columns: repeat(3 , 1fr );
+        column-gap: 5rem;
+        row-gap: 4rem;
+    }
+
+    /* FOOTER */
+    
+    .conteudo-footer{
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 2rem;
+        border-bottom: 1px solid var(--Cinza-linhas-divisórias);
+    }
+
+    .newsletter{
+        margin: 0;
+        border: none;
+        width: 40%;
+    }
+
+    .new-desktop{
+        display: flex;
+        width: 100%;
+        column-gap: 0.5rem;
+    }
+
+    .new-desktop input {
+        flex-grow: 10;
+    }
+
+    .new-desktop button {
+        flex-grow: 1;
+    }
+
+    .sociais-pag{
+        padding: 2rem;
+    }
+    
 }
 
-.newsletter p {
-  margin-bottom: 18px;
+@media (min-width: 1024px) {
+    .produtos {
+        display: grid;
+        grid-template-columns: repeat(3 , 1fr );
+        column-gap: 10rem;
+        row-gap: 4rem;
+    }
 }
 
-.e-mail {
-  width: 397px;
-  height: 54px;
-}
-
-.inscrever {
-  border: none;
-  background-color: #5ca720;
-  color: white;
-  font: "lato";
-  font-size: 20px;
-  width: 152px;
-  height: 54px;
-  cursor: pointer;
-}
-
-/* Caixa Inferior */
-
-.redes-sociais {
-  position: relative;
-  top: 43px;
-  left: 77px;
-  width: auto;
-  /* border: 2px solid red; */
-  float: left;
-}
-
-.redes-sociais ul li {
-  display: inline-block;
-  margin-right: 20px;
-}
-
-/* Formas de pagamento */
-
-.form-pagamento {
-  position: relative;
-  right: 70px;
-  width: 189px;
-  height: 43.71px;
-  /* border: 2px solid rgb(48, 245, 9); */
-  float: right;
-  text-align: center;
-}
-
-.form-pagamento ul li {
-  padding-left: 5px;
-}
-
-.form-pagamento ul li {
-  display: inline-block;
-  /* border: 2px solid red; */
+@media (min-width: 1440px) {
+    .produtos {
+        display: grid;
+        grid-template-columns: repeat(3 , 1fr );
+        column-gap: 15rem;
+        row-gap: 4rem;
+    }
 }
